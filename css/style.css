@@ -7,7 +7,7 @@
 }
 
 .header{
-    background-image: url(/Biblioteca-el-sabiondo/img/fondoBiblioteca.jpg);
+    background-image: url(/img/fondoBiblioteca.jpg);
 
     .header-logo a{
         display: flex;
