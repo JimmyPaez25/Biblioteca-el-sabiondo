@@ -24,7 +24,7 @@
 <body class="body">
     <div class="body-encabezado">
         <div class="body-botonVolver">
-            <a href="/html/index.html" class="btnVolver">
+            <a href="/html/vtnConsultaEstudiante.html" class="btnVolver">
                 <img src="/img/volver.png" width="30px" alt="">
                 Volver
             </a>
@@ -84,12 +84,28 @@
                 </button>
             </div>
             <div class="col-md-6  text-start">
-                <button class="btnRegistrar">Registrar Prestamo</button>
+                <button class="btnRegistrar" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrar Prestamo</button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                <div class="modal-body text-center">
+                                    Prestamo registrado con exito
+                                    <br>¿Desea ir a la pagina principal?
+                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='/html/index.html'">Volver a la pagina principal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
-
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
