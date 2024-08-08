@@ -1,0 +1,167 @@
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.header{
+    background-image: url(/img/fondoBiblioteca.jpg);
+
+    .header-logo {
+        display: flex;
+        justify-content: center;
+    
+        img {
+            max-width: 190px;
+        }
+    }
+
+    .header-titulo {
+        h1{
+            margin-top: 15px;
+            padding-bottom: 10px ;
+            font-size: 2.5em;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+.body{
+    background-color: #FAEBD7;
+    .body-encabezado {
+        padding: 10px;
+        align-items: center;
+
+        .body-titulo{
+
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .body-botonVolver a{
+            display: inline-block;
+            font-size: 1.5em;
+            color: black;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+            background-color: #A06D31;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),
+                        0px 5px 10px 0px;
+            border: 1px solid #64441f;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+        .body-botonVolver a:hover{
+            background-color: #745026;
+            color: #ffffff;
+            box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),
+                        0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            border: 1px solid #4d3519;
+        }
+
+        .body-botonEliminar a{
+            display: block;
+            width: 150px;
+            font-weight: 500;
+            font-size: 1em;
+            border-radius: 10%;
+            margin: 30px 30px;
+            margin-inline: auto;
+            padding: 10px 30px;
+            text-decoration: none;
+            box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),
+                        0px 5px 10px 0px;
+            color: black;
+            text-align: center;
+            background-color: #A06D31;
+            border-radius: 12px;
+        }
+
+
+        .body-botonEliminar a:hover{
+            background-color: #745026;
+            color: #ffffff;
+            box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),
+                        0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            border: 2px solid #4d3519; 
+        }
+
+    }
+    .barra-busqueda{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin: 30px 30px;
+        margin-inline: auto;
+        width: 150px;
+        height: 40px;
+        background: #ffffff;
+        border-radius: 9px;
+        padding: 10px 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        transition: 5ms ease-in-out;
+    }
+
+    .barra-busqueda:hover{
+        width: 1000px;
+    }
+
+    input{
+        width: 100%;
+        height: 100%;
+        color: #000000;
+        font-size: 20px;
+        border: none;
+        outline: none;
+
+    }
+
+    svg{
+        font-size: 22px;
+        color: #A06D31;
+        cursor: pointer;
+    }
+
+    }
+
+    table {
+        border-collapse: collapse;
+        cursor: pointer;
+        width: 60%;
+        margin: 30px auto 0px auto;
+    }
+    td , th{
+        padding: 10px;
+        text-align: center;
+    }
+    tr {
+        transition: all ease 300ms;
+    }
+
+    tr:hover {
+        background-color: antiquewhite;
+        color: #6f6c68;
+    }
+
+    tr:active {
+        background-color: rgb(255, 224, 163);
+        color: #6f6c68;
+    }
+
+    table thead{
+        background-color: #c0a076;
+        color: #0b0b0b;
+        border: 1px solid #000000;
+    }
+    table tbody{
+        background-color: #ffffff;
+        border: 1px solid #000000;
+    }
+  
+
