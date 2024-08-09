@@ -85,8 +85,26 @@
                 <label class="form-label"for="Campo_Comprobante">Comprobante:</label>
             </div>
             <div class="d-flex justify-content-between mb-1">
-                <button class="btn btn-custom">Editar</button> 
+                <button class="btn btn-custom mx-2" data-bs-toggle="modal" data-bs-target="#editarEstudianteModal">Editar</button> 
                 <button class="btn btn-custom mx-2" onclick="window.location.href='/html/vtnRegistrarPrestamo.html'">Editar estudiante y realizar un prestamo</button>
+            </div>
+            <!-- Modal editar -->
+            <div class="modal fade" id="editarEstudianteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editarEstudianteModal">Editar estudiante</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ¿Desea guardar los nuevos datos del estudiante?
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success">Editar</button>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>
