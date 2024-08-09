@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <head>
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            .navbar-custom {
+                background-image: url('/img/fondoBiblioteca.jpg');
+                background-size: auto;
+                background-position: center;
+                height: 150px; /* Ajusta la altura según sea necesario */
+            }
+
+            .navbar-brand img {
+                height: 50px;
+            }
+            
+            .btn-custom {
+                background-color: #A06D31; /* Cambia esto por el color que desees */
+                color: black;
+                margin: 30px 200px 30px 0px;
+            }
+    
+            .btn-custom:hover {
+                background-color: #4d3519; /* Cambia esto por el color que desees para el hover */
+            }
+
+            .btn-custom1 {
+                display: inline-block;
+                font-size: 1em;
+                color: black;
+                padding: 10px 20px;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                background-color: #A06D31; /* Cambia esto por el color que desees */
+                color: black;
+                box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),0px 5px 10px 0px;
+                border-radius: 12px;
+            }
+
+            .btn-custom1:hover {
+                background-color: #745026;
+                color: #ffffff;
+                box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2),
+                            0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+                border: 1px solid #4d3519;
+            }
+
+            body {
+                background-color: #FAEBD7; /* Cambia esto por el color que desees */
+            }          
+        </style>
+    </head>    
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logoBiblioteca.png" alt="Brand Logo" style="height: 100px;">
+            </a>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 50px;">
+        <h2>REGISTRAR LIBRO</h2>
+    </div>
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between mb-3">
+            <button class="btn btn-custom1" onclick="window.location.href='/html/index.html'">Volver</button> 
+        </div>
+
+        <div class="form-group mb-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input class="form-control"type="text" id="Campo_codigoBarras" placeholder="CodigoBarras">
+                        <label class="form-label"for="Campo_codigoBarras">Codigo de Barras:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control"type="text" id="Campo_nombreLibro" placeholder="NombreLibro">
+                        <label class="form-label"for="Campo_nombreLibro">Nombre del Libro:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control"type="text" id="Campo_descripcion" placeholder="Descripción">
+                        <label class="form-label"for="Campo_descripcion">Descripción:</label>
+                    </div>
+                </div>       
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input class="form-control mb-2"type="text" id="Campo_autorLibro" placeholder="AutorLibro">
+                        <label class="form-label"for="Campo_autorLibro">Autor del libro:</label>
+                    </div>    
+                    <div class="form-floating mb-3">
+                        <input class="form-control mb-2"type="text" id="Campo_categoria" placeholder="Categoría">
+                        <label class="form-label"for="Campo_categoria">Categoría:</label>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="row"> 
+            <div class="col-md-6"> 
+                <div class="form-group">
+                    <input class="form-control mb-2"type="text" placeholder="Buscar...">
+                </div>
+            </div>
+            <div class="col-md-6"> 
+                <button class="btn btn-custom1" type="button">Buscar</button>
+            </div> 
+        </div>
+        
+        <div class="table-container mb-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>CÓDIGO BARRAS</th>
+                        <th>CATEGORÍA</th>
+                        <th>NOMBRE LIBRO</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>AUTOR</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>978-3-16-148410-0</td>
+                        <td>Ficción</td>
+                        <td>El nombre del viento</td>
+                        <td>Una novela fantástica sobre la vida de un héroe llamado Kvothe.</td>
+                        <td>Patrick Rothfuss</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>978-0-7432-7356-5</td>
+                        <td>Autoayuda</td>
+                        <td>Los 7 hábitos de la gente altamente efectiva</td>
+                        <td>Un libro sobre cómo desarrollar hábitos efectivos para el éxito personal y profesional.</td>
+                        <td>Stephen R. Covey</td>
+                        <td>Prestado</td>
+                    </tr>
+                    <tr>
+                        <td>978-1-4516-7321-8</td>
+                        <td>Historia</td>
+                        <td>Sapiens: De animales a dioses</td>
+                        <td>Una breve historia de la humanidad, desde los inicios hasta la era moderna.</td>
+                        <td>Yuval Noah Harari</td>
+                        <td>Disponible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+            <!-- Button trigger modal Guardar -->
+            <button class="btn btn-custom1 mx-2" data-bs-toggle="modal" data-bs-target="#guardarLibroModal">Guardar Libro</button>           
+            <!-- Button to edit -->
+            <button class="btn btn-custom1 mx-2" onclick="window.location.href='/html/vtnRegistrarEstudiante.html'">Editar Libro</button>          
+            <!-- Button trigger modal Eliminar -->
+            <button class="btn btn-custom1 mx-2" data-bs-toggle="modal" data-bs-target="#eliminarLibroModal">Eliminar Libro</button>           
+        </div>
+        
+        <!-- Modal Guardar -->
+        <div class="modal fade" id="guardarLibroModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="guardarLibroLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="guardarLibroLabel">Guardar Libro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">¿Desea guardar este Libro?</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Eliminar -->
+        <div class="modal fade" id="eliminarLibroModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eliminarLibroLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="eliminarLibroLabel">Eliminar Libro</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">¿Desea eliminar este Libro?</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
